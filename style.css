@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+.card a{
+    color:#4b6987;
+    text-decoration:none;
+    font-weight:600;
+    position:relative;
+}
+
+.card a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background:#4b6987;
+    transition:width 0.3s ease;
+}
+
+.card a:hover::after{
+    width:100%;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:40px;
+}
+
+.header-container{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    flex-shrink:0;
+}
+
+.profile-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.profile-info h1{
+    font-size:3rem;
+    font-weight:bold;
+    margin:0;
+    line-height:1;
+}
+
+.profile-info p{
+    font-size:1.3rem;
+    margin-top:10px;
+    color:#dfe6e9;
+}
+
+section{
+    padding:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+#skills ul{
+    padding-left:20px;
+}
+
+#skills li{
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+/* #skills li{
+    background:#4b6987;
+    color:white;
+    display:inline-block;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+} */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    margin:10px 0;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#4b6987;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#3a5169;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
